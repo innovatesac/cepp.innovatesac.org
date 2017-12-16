@@ -1,0 +1,30 @@
+<div class="items text-muted">
+  <div id="projects" class="container">
+    <div class="row">
+      {% for project in site.data.projects %}
+      <div class="col-md-4 col-sm-6">
+
+          <div class="card">
+            <div class="card-block">
+              <a href="/projects/{{ project.slug }}">
+                <h4 class="card-title">{{ project.project_name | escape }}</h4>
+              </a>
+              <h6 class="card-subtitle mb-2 text-muted">{{ project.grant_amount | money }}</h6>
+            </div>
+            <div class="card-block">
+              <p class="card-text">
+                {{ project.description_short }}
+              </p>
+              <p class="float-right">
+                <a href="/projects/{{ project.slug }}">
+                  PROJECT DETAILS <i class="fa fa-chevron-right"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

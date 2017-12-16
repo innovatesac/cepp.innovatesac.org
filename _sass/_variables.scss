@@ -5,6 +5,8 @@
 // Color system
 //
 
+$cepp:     #f65b9f !default;
+
 $white:    #fff !default;
 $gray-100: #fafafa !default;
 $gray-200: #F9F8FC !default;
@@ -28,7 +30,7 @@ $green:   #13B955 !default;
 $teal:    #20c997 !default;
 $cyan:    #009CDC !default;
 
-$primary:       $purple !default;
+$primary:       $cepp !default;
 $secondary:     #A991D4 !default;
 $success:       $green !default;
 $info:          $cyan !default;
